@@ -1,0 +1,98 @@
+/* Navigation bar */
+
+.top-nav {
+    border: 1px solid grey;
+    /* background-color: var(--base-white); */
+}
+
+.tb-element {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px 0 20px 15px;
+}
+
+.tb-div-element {
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px 0 0px 15px;
+}
+
+.tb-element a {
+    text-decoration: none;
+    color: var(--base-black);
+    margin-left: 50px;
+}
+
+
+/* Svg  */
+
+#flipwave-svg {
+    height: 55px;
+    position: absolute;
+    left: 40%;
+    clip: rect(0px, 200px, 55px, 10px);
+}
+
+
+/* right navigation buttons */
+
+.rt-nav {
+    float: right;
+    display: inline-flex;
+    align-items: center;
+    margin-top: -10px;
+    padding-left: 10px;
+}
+
+
+/* user Images */
+
+.user-img {
+    height: 45px;
+    width: 45px;
+    border-radius: 25px;
+    background: url("../../images/download.jfif") no-repeat;
+    margin-right: 20px;
+}
+
+.user-img::after {
+    content: " ";
+    color: red;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+
+
+/* Search bar and Button */
+
+input[type="search"] {
+    height: 40px;
+    width: 275px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 2px solid var(--burnt-sienna);
+    outline: 1px solid var(--burnt-sienna);
+}
+
+.rt-nav ::placeholder {
+    padding: 20px;
+}
+
+input[type="search"]:focus {
+    border: 2px solid var(--burnt-sienna);
+    outline: 1px solid var(--burnt-sienna);
+}
+
+.rt-nav button[type="submit"] {
+    height: 42px;
+    width: 70px;
+    margin-left: -10px;
+    color: var(--base-black);
+    background-color: var(--burnt-sienna);
+    border-color: transparent;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}

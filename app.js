@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const ejs = require('ejs');
 
 const app = express()
-const port = 3000 || process.env.PORT;
+const port = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
 app.use('/public', express.static(__dirname + '/public'));
