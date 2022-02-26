@@ -11,4 +11,8 @@ app.use('/public', express.static(__dirname + '/public'));
 app.get('/', function(req, res) {
     res.render('main');
 });
+
+app.get('*', function(req, res) {
+    res.sendFile(__dirname + '/index.html');
+});
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

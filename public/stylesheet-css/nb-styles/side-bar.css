@@ -1,0 +1,14 @@
+.sb-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--base-white);
+    padding: 20px;
+    width: 20%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.sb-element {
+    display: block;
+}

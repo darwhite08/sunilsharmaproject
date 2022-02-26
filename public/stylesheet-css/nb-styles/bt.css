@@ -3,6 +3,7 @@
     background-color: var(--charcol);
     width: 100%;
     padding: 1vh;
+    position: relative;
 }
 
 .bt-element a {
