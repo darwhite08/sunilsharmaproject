@@ -15,3 +15,10 @@
     cursor: pointer;
     font-size: 15px;
 }
+
+.sidebar-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}

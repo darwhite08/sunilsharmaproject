@@ -1,6 +1,6 @@
 .sb-nav {
     position: fixed;
-    top: 0;
+    top: 50px;
     left: 0;
     background-color: var(--base-white);
     padding: 20px;
@@ -11,4 +11,46 @@
 
 .sb-element {
     display: block;
+    text-decoration: none;
+    color: var(--base-black);
+    padding: 8px;
+    font-size: 14px;
+}
+
+.sb-row :last-child {
+    border-bottom: 1px solid var(--base-grey);
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+
+.sb-user {
+    background-color: var(--base-black);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 50px;
+    padding-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+
+.sb-user-pic {
+    height: 30px;
+    width: 30px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.sb-user-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    justify-content: center;
+}
+
+.sb-view {
+    display: none;
 }
