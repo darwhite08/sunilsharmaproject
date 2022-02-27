@@ -1,9 +1,19 @@
 .fb-container {
     padding-left: 45vh;
     padding-right: 10vh;
-    background-color: red;
+    background-color: var(--charcol);
 }
 
 .fb-row-container {
     list-style: none;
+    color: var(--base-white);
+}
+
+.fb-element:first-child {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.fb-element>a {
+    text-decoration: none;
 }

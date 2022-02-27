@@ -3,9 +3,6 @@ function side_nav() {
     var y = document.getElementById("sb-nav");
 
     if (x.style.display === 'block') {
-        y.style.display = "block"
-    } else if (x.style.display === 'block' && y.style.display === "block") {
-        x.style.display = 'none';
-        y.style.display = 'none';
+        y.style.display = 'block';
     }
 }
