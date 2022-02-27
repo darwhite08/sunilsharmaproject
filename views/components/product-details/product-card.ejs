@@ -1,12 +1,13 @@
-<div class="w3-container w3-row">
-    <div class="">
-        <h3 class="product-class">Perfume</h3>
-        <p class="profuct-class-details">Showing 61-80 out of 724238 Products</p>
-    </div>
+<div class="product-class-detail">
+    <h3 class="product-class">Perfume</h3>
+    <p class="product-class-details">Showing 61-80 out of 724238 Products</p>
+</div>
+
+<div class="w3-row">
     <% var current = 0; %>
         <% while (current < 12){ %>
-            <div class="product-container w3-card-2 w3-margin-top  w3-col s3 ">
-                <img src="../../../public/images/download.jfif" alt="" class="product-image">
+            <div class="product-container w3-margin-top w3-margin-left w3-col l3" style="width: 23.5%;">
+                <img src="../../../public/images/demopic.jpg" alt="" class="product-image">
                 <div class="product-detail">
                     <span class="product-name">Vanesa perfume</span><br>
                     <span class="product-price">$10</span>
@@ -19,5 +20,5 @@
                 </div>
             </div>
             <%    current += 1;
-};%>
+        };%>
 </div>

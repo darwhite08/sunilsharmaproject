@@ -3,6 +3,7 @@
 @import url(./stylesheet-css/nb-styles/side-bar.css);
 @import url(./stylesheet-css/nb-styles/ns-tp.css);
 @import url(./stylesheet-css/product-details-styles/product.css);
+@import url(./stylesheet-css/nb-styles/foot-bar.css);
 @import url(./stylesheet-css/product-details-styles/product-details-container.css);
 @import url(./colors.css);
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
@@ -11,6 +12,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {

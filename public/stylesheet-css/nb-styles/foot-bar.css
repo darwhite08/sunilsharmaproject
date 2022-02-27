@@ -1,0 +1,9 @@
+.fb-container {
+    padding-left: 45vh;
+    padding-right: 10vh;
+    background-color: red;
+}
+
+.fb-row-container {
+    list-style: none;
+}
