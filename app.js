@@ -11,6 +11,13 @@ app.use('/public', express.static(__dirname + '/public'));
 app.get('/', function(req, res) {
     res.render('main');
 });
+app.get('/cart', function(req, res) {
+    res.render('cart-main.ejs');
+});
+app.get('/preview', function(req, res) {
+    res.render('product-preview-main');
+});
+
 
 app.get('*', function(req, res) {
     res.sendFile(__dirname + '/index.html');

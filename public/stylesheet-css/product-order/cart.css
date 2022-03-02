@@ -1,0 +1,177 @@
+    .cart-container {
+        margin-left: 10vh;
+        margin-right: 10vh;
+        line-height: 4vh;
+        position: relative;
+    }
+    /* Cart Product */
+    
+    .cart-header span {
+        font-size: 20px;
+        border-top: 1px solid rgb(228, 222, 222);
+        border-left: 1px solid rgb(228, 222, 222);
+        border-right: 1px solid rgb(228, 222, 222);
+        width: 58%;
+        display: block;
+        margin-top: 6vh;
+        padding: 10px;
+    }
+    
+    .products-container {
+        margin-bottom: 1000px;
+    }
+    
+    .cart-products {
+        position: relative;
+        border: 1px solid rgb(228, 222, 222);
+        width: 58%;
+        float: left;
+        clear: both;
+    }
+    
+    .product-cut-button {
+        position: absolute;
+        top: 0;
+        right: 2%;
+    }
+    
+    .cart-products img {
+        height: 25vh;
+        width: 25vh;
+        overflow: hidden;
+        padding: 15px;
+        float: left;
+    }
+    
+    .cart-product-details {
+        padding-top: 15px;
+    }
+    
+    .cart-products form {
+        padding-left: 15px;
+        padding-top: 10px;
+    }
+    
+    .cart-products button {
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+    
+    .cart-product-details :first-child {
+        font-size: 20px;
+    }
+    
+    .cart-product-details :not(:first-child) {
+        color: grey;
+        font-size: 14px;
+    }
+    /* Place order Button */
+    
+    .place-order-button {
+        position: fixed;
+        bottom: 0vh;
+        left: 10vh;
+        width: 52.5%;
+        height: 10vh;
+        background-color: rgb(87, 87, 156);
+    }
+    
+    .place-order-button a {
+        float: right;
+        padding: 10px;
+        text-decoration: none;
+        box-shadow: 1px 1px 20px 2px;
+        margin: 15px 35px 15px 15px;
+        width: 15vh;
+        text-align: center;
+        background-color: rgb(201, 91, 40);
+    }
+    /* Cart price summary */
+    
+    .cart-price-summary {
+        border: 1px solid rgb(228, 222, 222);
+        margin-left: 4vh;
+        height: 90vh;
+        box-shadow: 1px 1px 20px 2px rgb(231, 229, 229);
+        padding: 10px;
+        float: right;
+        position: fixed;
+        top: 16vh;
+        right: 4vh;
+    }
+    
+    .cart-price-details .key {
+        float: left;
+        padding-left: 20px;
+        font-size: 20px;
+        line-height: 23px;
+    }
+    
+    .cart-price-details .value {
+        float: right;
+        padding-right: 20px;
+        line-height: 28px;
+    }
+    /* quantity box */
+    /* -- quantity box -- */
+    
+    .quantity {
+        display: inline-block;
+    }
+    
+    .quantity .input-text.qty {
+        width: 35px;
+        height: 39px;
+        padding: 0 5px;
+        text-align: center;
+        background-color: transparent;
+        border: 1px solid #efefef;
+    }
+    
+    .quantity.buttons_added {
+        text-align: left;
+        position: relative;
+        white-space: nowrap;
+        vertical-align: top;
+    }
+    
+    .quantity.buttons_added input {
+        display: inline-block;
+        margin: 0;
+        vertical-align: top;
+        box-shadow: none;
+    }
+    
+    .quantity.buttons_added .minus,
+    .quantity.buttons_added .plus {
+        padding: 7px 10px 8px;
+        height: 41px;
+        background-color: #ffffff;
+        border: 1px solid #efefef;
+        cursor: pointer;
+    }
+    
+    .quantity.buttons_added .minus {
+        border-right: 0;
+    }
+    
+    .quantity.buttons_added .plus {
+        border-left: 0;
+    }
+    
+    .quantity.buttons_added .minus:hover,
+    .quantity.buttons_added .plus:hover {
+        background: #eeeeee;
+    }
+    
+    .quantity input::-webkit-outer-spin-button,
+    .quantity input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        margin: 0;
+    }
+    
+    .quantity.buttons_added .minus:focus,
+    .quantity.buttons_added .plus:focus {
+        outline: none;
+    }

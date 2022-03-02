@@ -32,6 +32,7 @@
     height: 55px;
     position: absolute;
     left: 40%;
+    top: 1%;
     clip: rect(0px, 200px, 55px, 10px);
 }
 

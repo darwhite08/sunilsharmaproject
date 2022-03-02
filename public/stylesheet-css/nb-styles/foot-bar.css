@@ -1,5 +1,5 @@
 .fb-container {
-    padding-left: 45vh;
+    padding-left: 15vh;
     padding-right: 10vh;
     background-color: var(--charcol);
 }
@@ -7,6 +7,7 @@
 .fb-row-container {
     list-style: none;
     color: var(--base-white);
+    margin-right: 16vh;
 }
 
 .fb-element:first-child {
@@ -16,4 +17,15 @@
 
 .fb-element>a {
     text-decoration: none;
+}
+
+.footer-side-text {
+    padding-top: 10vh;
+}
+
+.footer-side-text p,
+.footer-side-text h2 {
+    margin-left: 10vh;
+    color: white;
+    text-align: justify;
 }

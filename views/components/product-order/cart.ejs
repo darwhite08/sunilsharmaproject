@@ -1,0 +1,50 @@
+<div class="cart-container">
+
+    <div class="cart-header">
+        <Span>My Cart ()</Span>
+    </div>
+    <div class="products-container">
+        <% for( let index = 0; index < 5; index++ ) { %>
+            <div class="cart-products ">
+                <Button class="product-cut-button w3-btn w3-hover-none">X</Button>
+                <img class="" src=" ../../../public/images/demopic.jpg " alt=" " srcset=" ">
+                <div class="cart-product-details  ">
+                    <span>Vanesa Perfume</span><br>
+                    <span>100ml, Red</span><br>
+                    <span>Seller: Priyanshu chandra</span><br>
+                </div>
+                <form class="quantity buttons_added">
+                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                </form>
+                <button form="" class="w3-btn w3-hover-none">Remove</button><br>
+            </div>
+            <% } %>
+                <div class="place-order-button">
+                    <a href="#">Place Order</a>
+                </div>
+    </div>
+
+    <div class="cart-price-summary " style="width: 39%;">
+        <h3>
+            Price Summary
+        </h3>
+        <hr>
+        <div class="cart-price-details">
+            <% for( let index = 0; index < 5; index++ ) { %>
+                <span class="key">Some text</span> <span class="value">$10</span><br>
+                <% } %>
+        </div>
+        <div class="card-sumtotal">
+            <hr>
+            <span>Total Amount</span>
+            <span></span>
+            <hr>
+        </div>
+        <div class="card-price-extra">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur reiciendis porro nobis voluptate minus perferendis at, adipisci in fuga quos quae commodi? Praesentium dolor expedita magnam vel at cupiditate!</span>
+            <hr>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis molestias provident est ratione earum quas repudiandae placeat eos asperiores quis quia error minima ipsum, saepe tenetur laudantium! Ad, sunt ea.</span>
+        </div>
+    </div>
+
+</div>
