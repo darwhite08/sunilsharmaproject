@@ -11,11 +11,160 @@
             <span class="w3-text-grey w3-xlarge">Lorem ipsum dolor sit, amet ipsum dolor sit </span><br>
             <a class="w3-btn w3-hover-none w3-border" href="http://" target="_blank" rel="noopener noreferrer"><Span>4.5</Span> <span>140 ratings</span></a>
             <hr>
-            <span>Price tag</span>
+            <span>$10 <del>15</del></span>
+            <Span>33.33% off</Span>
         </div>
-        <div class="pv-product-options">
+        <div class="pv-other-options w3-container">
+            <span class="w3-xlarge  ">Header text</span><br>
+            <span class="w3-round  w3-border w3-padding ">30ml</span>
+            <span class="w3-round  w3-border w3-padding ">30ml</span>
+        </div>
+
+        <div class="pv-buy-options">
             <a class="w3-btn w3-hover-none w3-light-blue w3-hover-blue " href="">Buy Now</a>
             <a class="w3-btn w3-hover-none w3-light-blue w3-hover-blue" href="">Add to cart</a>
+        </div>
+        <hr>
+        <div class="pv-delivery-options">
+            <h3>Delivery Options</h3>
+            <form action="">
+                <input type="number" value="">
+            </form>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, modi voluptatem! Sequi quia architecto accusantium soluta ratione iste, at quidem et, dolore dolor iure doloribus earum eum tenetur, sapiente ex.</p>
+        </div>
+        <div class="pv-offer-section">
+            <h3>Offer header</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, aperiam cum sunt nisi sequi voluptatibus labore asperiores rem nesciunt consectetur minus omnis. Sapiente minima exercitationem debitis soluta distinctio, nisi omnis?</p>
+            <ul>
+
+                <% for( let index = 0; index <5; index++ ) { %>
+                    <li>Offer +
+                        <%= index %>
+                    </li>
+                    <% } %>
+            </ul>
+        </div>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim cum at delectus, est fugit hic? Veritatis numquam odit aspernatur, cupiditate vel iusto accusantium commodi quisquam, tenetur itaque earum! Repellat, tempora?</p>
+        <hr>
+        <div class="pv-product-details">
+            <h3>Product Details</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum nisi blanditiis debitis iste quisquam fugiat culpa recusandae minus maiores possimus aut sequi ut in eligendi eveniet, qui porro saepe. Aliquid!</p>
+            <h4>Specifications</h4>
+
+            <div class="w3-row">
+                <% for( let index = 0; index < 6; index++ ) { %>
+                    <div class="w3-col l6">
+                        <span>Specifications name</span><br>
+                        <span>Specifications value</span>
+                    </div>
+                    <div lass="w3-col l6">
+                        <span>Specifications name</span><br>
+                        <span>Specifications value</span>
+                    </div>
+                    <hr>
+                    <% } %>
+            </div>
+            <div class="pv-rating ">
+                <h3>Rating</h3>
+                <div class="w3-row">
+                    <div class="w3-col l6">
+                        <span>rating</span>
+                    </div>
+                    <div class="w3-col l6 ">
+                        <% for( let index = 0; index < 5; index++ ) { %>
+                            <div class="w3-light-grey w3-margin-bottom " style="width: 50%;">
+                                <span style="height:0.8vh;width:20%" class="w3-green w3-block "></span>
+                            </div>
+                            <% } %>
+                    </div>
+                </div>
+                <hr>
+                <div class="pv-review-customer-photos">
+                    <span>Customer Photos (19)</span>
+                    <div class="w3-row">
+                        <% for( let index = 0; index < 4; index++ ) { %>
+                            <img class="w3-col l3" src="../../../public/images/demopic.jpg" alt="">
+                            <% } %>
+                    </div>
+                </div>
+
+
+                <% for( let index = 0; index < 3; index++ ) { %>
+                    <div class="pv-customer-review w3-margin-top">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo distinctio inventore unde nulla architecto quod rerum velit et sint id labore, qui alias repellat, quam, ducimus cum? Ea, quia nesciunt?</p>
+                        <% if (true) { %>
+                            <img class="" style="height: 24vh; width: 24vh;" src="../../../public/images/demopic.jpg" alt=""><br>
+                            <% } %>
+                                <div class="w3-row">
+                                    <div class="w3-col l10">
+                                        <span>Priyanshu chandra</span> |
+                                        <span>12 july, 2021</span>
+                                    </div>
+                                    <div class="w3-col l2">
+                                        <span>like</span>
+                                        <span>Unlike</span>
+                                    </div><br>
+                                    <hr>
+                                </div>
+                    </div>
+                    <% } %>
+                        <div class="pv-extra">
+                            <a href="">View All review</a><br>
+                            <span> Details</span>
+                            <span> Details</span>
+                            <div>
+                                <span>seller</span>
+                                <span>Priyanshu chandra</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aliquam quis obcaecati nihil a dolore dicta, eligendi esse dolorem, vitae repellendus cum beatae modi, sed alias qui! Minima, eligendi commodi?</p>
+                        </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="w3-container">
+        <h3>Similar Products</h3>
+        <div class="w3-row">
+            <% var current = 0; %>
+                <% while (current < 12){ %>
+                    <a href="/preview" class="product-container w3-margin-top w3-margin-left w3-col l2" style="width: 15.5%; text-decoration: none;">
+                        <img src="../../../public/images/demopic.jpg" alt="" class="product-image">
+                        <div class="product-detail">
+                            <span class="product-name">Vanesa perfume</span><br>
+                            <span class="product-price">$10</span>
+                            <span><del class="product-price-del">$15</del></span>
+                            <span class="product-price-off">33.33% off</span><br>
+                            <span class="product-extra">&#37; $2 dollars discount on 1st order</span><br>
+                            <span class="product-delivery-details">Free Delivery</span><br>
+                            <span class="product-rating">4.5 &nbsp;	&#9733;</span>
+                            <span class="product-rating-details">1 review</span><br>
+                        </div>
+                    </a>
+                    <%    current += 1;
+                };%>
+        </div>
+    </div>
+    <div class="w3-container">
+        <h3>Customer also liked</h3>
+        <div class="w3-row">
+            <% var current = 0; %>
+                <% while (current < 12){ %>
+                    <a href="/preview" class="product-container w3-margin-top w3-margin-left w3-col l2" style="width: 15.5%; text-decoration: none;">
+                        <img src="../../../public/images/demopic.jpg" alt="" class="product-image">
+                        <div class="product-detail">
+                            <span class="product-name">Vanesa perfume</span><br>
+                            <span class="product-price">$10</span>
+                            <span><del class="product-price-del">$15</del></span>
+                            <span class="product-price-off">33.33% off</span><br>
+                            <span class="product-extra">&#37; $2 dollars discount on 1st order</span><br>
+                            <span class="product-delivery-details">Free Delivery</span><br>
+                            <span class="product-rating">4.5 &nbsp;	&#9733;</span>
+                            <span class="product-rating-details">1 review</span><br>
+                        </div>
+                    </a>
+                    <%    current += 1;
+                };%>
         </div>
     </div>
 </div>
