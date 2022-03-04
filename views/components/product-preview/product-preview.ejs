@@ -1,48 +1,56 @@
-<div class="product-preview-container w3-container w3-row w3-padding-64 ">
-    <div class="w3-col l6 w3-row-padding ">
+<div class="product-preview-container w3-container w3-row w3-padding-32 ">
+    <p class="pv-current w3-margin-left w3-padding"><a href="">some text</a> / <a href="">some text</a> / <a href="">some text</a> / <a href="">some text</a></p>
+    <div class="w3-col l7 w3-row-padding ">
         <% for( let index = 0; index < 5; index++ ) { %>
             <img class="w3-col l6 w3-margin-bottom" src="../../public/images/demopic.jpg" alt="">
             <% } %>
                 <img src="" alt="">
     </div>
-    <div class="w3-col l6">
+    <div class="w3-col l5 ">
         <div class="pv-product-name">
-            <span class="w3-xxlarge">VANESA PERFUME</span><br>
+            <span class="pv-header">VANESA PERFUME</span><br>
             <span class="w3-text-grey w3-xlarge">Lorem ipsum dolor sit, amet ipsum dolor sit </span><br>
             <a class="w3-btn w3-hover-none w3-border" href="http://" target="_blank" rel="noopener noreferrer"><Span>4.5</Span> <span>140 ratings</span></a>
             <hr>
-            <span>$10 <del>15</del></span>
-            <Span>33.33% off</Span>
+            <span class="pv-price">$10 <del pv-previous-price>$. 15</del></span>
+            <Span class="pv-discount">33.33% off</Span>
+            <p>inclusive of all taxes</p>
         </div>
-        <div class="pv-other-options w3-container">
-            <span class="w3-xlarge  ">Header text</span><br>
-            <span class="w3-round  w3-border w3-padding ">30ml</span>
+        <div class="pv-other-options w3-margin-top">
+            <span class="w3-xlarge pv-header ">Select Size</span><br><br>
+            <span class="w3-round  w3-border w3-padding w3-margin-right ">30ml</span>
             <span class="w3-round  w3-border w3-padding ">30ml</span>
         </div>
 
-        <div class="pv-buy-options">
-            <a class="w3-btn w3-hover-none w3-light-blue w3-hover-blue " href="">Buy Now</a>
-            <a class="w3-btn w3-hover-none w3-light-blue w3-hover-blue" href="">Add to cart</a>
+        <div class="pv-buy-options w3-margin-top ">
+            <a class="w3-btn w3-hover-none w3-light-blue w3-hover-blue w3-xlarge " href="" style="width: 25%;">Buy Now</a>
+            <a class="w3-btn w3-hover-none w3-light-blue w3-hover-blue w3-xlarge" href="" style="width: 25%;">Add to cart</a>
+        </div>
+        <hr>
+        <div class="">
+            <span class="w3-large w3-margin-right"> $10 <del class="w3-text-grey" pv-previous-price> &nbsp;$. 15 &nbsp;</del></span>
+            <Span class="w3-large w3-text-orange">33.33% off</Span><br>
+            <span>Seller:</span>
+            <span>Priyanshu chandra</span>
         </div>
         <hr>
         <div class="pv-delivery-options">
-            <h3>Delivery Options</h3>
+            <h4 class="pv-header">DELIVERY OPTIONS</h4>
             <form action="">
-                <input type="number" value="">
+                <input type="number" value="" placeholder="Enter PIN code">
             </form>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, modi voluptatem! Sequi quia architecto accusantium soluta ratione iste, at quidem et, dolore dolor iure doloribus earum eum tenetur, sapiente ex.</p>
         </div>
         <div class="pv-offer-section">
-            <h3>Offer header</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, aperiam cum sunt nisi sequi voluptatibus labore asperiores rem nesciunt consectetur minus omnis. Sapiente minima exercitationem debitis soluta distinctio, nisi omnis?</p>
+            <h4 class="pv-header">BEST OFFERS </h4>
+            <p>Best price &nbsp; 7 dollars</p>
             <ul>
 
                 <% for( let index = 0; index <5; index++ ) { %>
-                    <li>Offer +
-                        <%= index %>
-                    </li>
+                    <li>Lorem ipsum dolor sit</li>
                     <% } %>
             </ul>
+
         </div>
         <hr>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim cum at delectus, est fugit hic? Veritatis numquam odit aspernatur, cupiditate vel iusto accusantium commodi quisquam, tenetur itaque earum! Repellat, tempora?</p>
@@ -55,11 +63,11 @@
             <div class="w3-row">
                 <% for( let index = 0; index < 6; index++ ) { %>
                     <div class="w3-col l6">
-                        <span>Specifications name</span><br>
+                        <span class="w3-small w3-text-grey">Specifications name</span><br>
                         <span>Specifications value</span>
                     </div>
                     <div lass="w3-col l6">
-                        <span>Specifications name</span><br>
+                        <span class="w3-small w3-text-grey">Specifications name</span><br>
                         <span>Specifications value</span>
                     </div>
                     <hr>
@@ -123,44 +131,37 @@
             </div>
         </div>
     </div>
-    <div class="w3-container">
-        <h3>Similar Products</h3>
-        <div class="w3-row">
+    <div class="w3-container ">
+        <h3 class="w3-margin w3-padding w3-border-bottom">Similar Products</h3>
+        <div class=" w3-row ">
             <% var current = 0; %>
                 <% while (current < 12){ %>
-                    <a href="/preview" class="product-container w3-margin-top w3-margin-left w3-col l2" style="width: 15.5%; text-decoration: none;">
-                        <img src="../../../public/images/demopic.jpg" alt="" class="product-image">
-                        <div class="product-detail">
-                            <span class="product-name">Vanesa perfume</span><br>
-                            <span class="product-price">$10</span>
-                            <span><del class="product-price-del">$15</del></span>
-                            <span class="product-price-off">33.33% off</span><br>
-                            <span class="product-extra">&#37; $2 dollars discount on 1st order</span><br>
-                            <span class="product-delivery-details">Free Delivery</span><br>
-                            <span class="product-rating">4.5 &nbsp;	&#9733;</span>
-                            <span class="product-rating-details">1 review</span><br>
+                    <a href="/preview " class="product-container w3-margin-top w3-margin-left w3-col l2 " style="width: 15.5%; text-decoration: none;overflow: hidden; ">
+                        <img src="../../../public/images/demopic.jpg " alt=" " class="product-image " style="height: 40vh; overflow: hidden; ">
+                        <div class="product-detail ">
+                            <span class="product-name ">Vanesa perfume</span><br>
+                            <span class="product-price ">$10</span>
+                            <span><del class="product-price-del ">$15</del></span>
+                            <span class="product-price-off ">33.33% off</span><br>
+
                         </div>
                     </a>
                     <%    current += 1;
                 };%>
         </div>
     </div>
-    <div class="w3-container">
-        <h3>Customer also liked</h3>
-        <div class="w3-row">
+    <div class="w3-container ">
+        <h3 class="w3-margin w3-padding w3-border-bottom ">Customer also liked</h3>
+        <div class="w3-row ">
             <% var current = 0; %>
                 <% while (current < 12){ %>
-                    <a href="/preview" class="product-container w3-margin-top w3-margin-left w3-col l2" style="width: 15.5%; text-decoration: none;">
-                        <img src="../../../public/images/demopic.jpg" alt="" class="product-image">
-                        <div class="product-detail">
-                            <span class="product-name">Vanesa perfume</span><br>
-                            <span class="product-price">$10</span>
-                            <span><del class="product-price-del">$15</del></span>
-                            <span class="product-price-off">33.33% off</span><br>
-                            <span class="product-extra">&#37; $2 dollars discount on 1st order</span><br>
-                            <span class="product-delivery-details">Free Delivery</span><br>
-                            <span class="product-rating">4.5 &nbsp;	&#9733;</span>
-                            <span class="product-rating-details">1 review</span><br>
+                    <a href="/preview " class="product-container w3-margin-top w3-margin-left w3-col l2 " style="width: 15.5%; text-decoration: none;overflow: hidden; ">
+                        <img src="../../../public/images/demopic.jpg " alt=" " class="product-image " style="height: 40vh; overflow: hidden; ">
+                        <div class="product-detail ">
+                            <span class="product-name ">Vanesa perfume</span><br>
+                            <span class="product-price ">$10</span>
+                            <span><del class="product-price-del ">$15</del></span>
+                            <span class="product-price-off ">33.33% off</span><br>
                         </div>
                     </a>
                     <%    current += 1;

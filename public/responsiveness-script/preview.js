@@ -3,3 +3,4 @@
 //         document.querySelectorAll(".product-container")[index].setAttribute("href", "/")
 //     });
 // }
+main();
