@@ -1,7 +1,7 @@
 /* Navigation bar */
 
 .top-nav {
-    border: 1px solid grey;
+    border-bottom: 1px solid rgb(194, 190, 190);
     /* background-color: var(--base-white); */
 }
 
@@ -31,7 +31,7 @@
 #flipwave-svg {
     height: 55px;
     position: absolute;
-    left: 40%;
+    left: 10%;
     top: 1%;
     clip: rect(0px, 200px, 55px, 10px);
 }
@@ -44,7 +44,17 @@
     display: inline-flex;
     align-items: center;
     margin-top: -10px;
-    padding-left: 10px;
+    padding-left: 20px;
+}
+
+
+/* Icons */
+
+.ns-ttp .fa-bell,
+.fa-cart-shopping {
+    font-size: 30px;
+    margin-right: 10px;
+    color: rgb(19, 75, 124);
 }
 
 
@@ -69,31 +79,15 @@
 
 /* Search bar and Button */
 
-input[type="search"] {
-    height: 40px;
-    width: 275px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-    border: 2px solid var(--burnt-sienna);
-    outline: 1px solid var(--burnt-sienna);
+.tb-div-search {
+    width: 70vh;
+    margin-top: -0.3vh;
+    position: absolute;
+    top: -2.5%;
+    right: 10%;
+    margin-right: 40px;
 }
 
-.rt-nav ::placeholder {
-    padding: 20px;
-}
-
-input[type="search"]:focus {
-    border: 2px solid var(--burnt-sienna);
-    outline: 1px solid var(--burnt-sienna);
-}
-
-.rt-nav button[type="submit"] {
-    height: 42px;
-    width: 70px;
-    margin-left: -10px;
-    color: var(--base-black);
-    background-color: var(--burnt-sienna);
-    border-color: transparent;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
+.tb-div-search div {
+    border-radius: 10px;
 }

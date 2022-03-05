@@ -9,6 +9,8 @@
 @import url(./stylesheet-css/product-order/cart.css);
 @import url(./stylesheet-css/product-preview/pv.css);
 @import url(./stylesheet-css/mpd/mp-design.css);
+@import url(./stylesheet-css/signup/login.css);
+@import url(./stylesheet-css/signup/signup.css);
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 * {
     padding: 0;

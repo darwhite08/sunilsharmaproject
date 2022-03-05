@@ -14,9 +14,11 @@ app.get('/', function(req, res) {
 app.get('/cart', function(req, res) {
     res.render('cart-main.ejs');
 });
-
 app.get('/preview', function(req, res) {
     res.render('product-preview-main');
+});
+app.get('/login', function(req, res) {
+    res.render('components/signup/login');
 });
 
 
