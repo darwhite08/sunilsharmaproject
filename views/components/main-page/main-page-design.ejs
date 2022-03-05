@@ -1,16 +1,55 @@
-<div class="main-page-design w3-container w3-padding-64 w3-row">
-    <img class="w3-col l5" src="../../../public/svg/shope.svg" alt="">
-    <div class="w3-col l7 mpd-first">
-        <div class="mpd-front">
-            <h1>Header text</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus culpa nam voluptatibus eveniet nobis magnam fugit possimus ea in aliquid eos atque hic commodi dicta, quas ipsum? Reprehenderit, non soluta.</p>
+<div class="main-page-design ">
+    <div class="w3-row mpd-first ">
+        <div class="mpd-text w3-col l6">
+            <h1>Low Prices But Quality Products</h1>
+            <p>Shop at flipwave and get your product at minimum price</p>
+            <button class="w3-button w3-green w3-margin-top w3-xlarge" style="width: 75%;">Shop Now</button>
         </div>
-        <button type="submit">Shop now</button>
-        <button type="submit">Know more</button>
+        <img class="w3-col l6" src="../../../public/images/demopic.jpg" alt="">
     </div>
-    <div class="mpd-main-design">
-        <div class="el">f</div>
-        <div class="el">f</div>
-        <div class="el">f</div>
+    <div class="mpd-second w3-padding-48    ">
+        <div class="w3-center w3-margin-top">
+            <span class="header-lt-br"></span><span class="header ">Top Categories to choose from</span><span class="header-rt-br"></span>
+        </div>
+        <% for( let index = 0; index <3; index++ ) { %>
+            <div class="w3-center w3-padding-16 w3-row-padding">
+                <img class="w3-col l4" src="../../../public/images/demopic.jpg" alt="">
+                <img class=" w3-col l4" src="../../../public/images/demopic.jpg" alt="">
+                <img class=" w3-col l4" src="../../../public/images/demopic.jpg" alt="">
+            </div>
+            <% } %>
+                <div class="signup-inst">
+                    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. consequuntur et </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto qui placeat quibusdam ea mollitia ex officia fugiat necessitatibus, quia consequatur sit aspernatur optio, et exercitationem nobis veniam, maxime ducimus ab!</p>
+                    <div>
+                        <span>some text</span> |
+                        <span>some text</span> |
+                        <span>Some text</span> |
+                    </div>
+                    <button class="w3-button w3-white">Sign up now</button>
+                </div>
+                <div class="mpd-third">
+                    <h2 class="header">Products for you</h2>
+
+                    <div class="w3-row">
+                        <% var current = 0; %>
+                            <% while (current < 20){ %>
+                                <a href="/preview" class="product-container w3-margin-top w3-margin-left w3-col l3" style="width: 23.5%; text-decoration: none;">
+                                    <img src="../../../public/images/demopic.jpg" alt="" class="product-image">
+                                    <div class="product-detail">
+                                        <span class="product-name">Vanesa perfume</span><br>
+                                        <span class="product-price">$10</span>
+                                        <span><del class="product-price-del">$15</del></span>
+                                        <span class="product-price-off">33.33% off</span><br>
+                                        <span class="product-extra">&#37; $2 dollars discount on 1st order</span><br>
+                                        <span class="product-delivery-details">Free Delivery</span><br>
+                                        <span class="product-rating">4.5 &nbsp;	&#9733;</span>
+                                        <span class="product-rating-details">1 review</span><br>
+                                    </div>
+                                </a>
+                                <%    current += 1;
+                            };%>
+                    </div>
+                </div>
     </div>
 </div>
