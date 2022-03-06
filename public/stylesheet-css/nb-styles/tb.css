@@ -31,7 +31,7 @@
 #flipwave-svg {
     height: 55px;
     position: absolute;
-    left: 10%;
+    left: 15%;
     top: 1%;
     clip: rect(0px, 200px, 55px, 10px);
 }
@@ -53,8 +53,10 @@
 .ns-ttp .fa-bell,
 .fa-cart-shopping {
     font-size: 30px;
-    margin-right: 10px;
-    color: rgb(19, 75, 124);
+    margin-right: 15px;
+    color: rgb(105, 110, 114);
+    border-right: 3px solid rgb(226, 215, 215);
+    padding-right: 25px;
 }
 
 
@@ -84,7 +86,7 @@
     margin-top: -0.3vh;
     position: absolute;
     top: -2.5%;
-    right: 10%;
+    right: 15%;
     margin-right: 40px;
 }
 

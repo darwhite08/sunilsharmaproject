@@ -1,0 +1,263 @@
+.signup-page {
+    /* position: relative; */
+    background-color: indianred;
+    height: 100vh;
+}
+
+.signup-container {
+    margin-top: 4vh;
+    margin-left: 45vh;
+    width: 57.5%;
+}
+
+.sp-container-1 {
+    background-color: white;
+    min-height: 70vh;
+    padding: 40px;
+    border-radius: 15px 0 0 15px;
+    background-image: url("../../svg/bob/signup.svg");
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position-y: -42vh;
+    background-position-x: 20%;
+}
+
+.sp-container-1 input[type="text"],
+.sp-container-1 input[type="email"],
+.sp-container-1 input[type="password"] {
+    width: 85%;
+    border: none;
+    border: 1px solid rgb(219, 213, 213);
+    margin-bottom: 3vh;
+    margin-left: 2vh;
+    border-radius: 4px;
+    height: 6vh;
+    padding: 0 0 0 18px;
+}
+
+::placeholder {
+    padding: 6px;
+}
+
+.sp-container-1 input[type="text"]:focus,
+.sp-container-1 input[type="email"]:focus,
+.sp-container-1 input[type="password"]:focus {
+    border: 1px solid indianred;
+    outline: none;
+}
+
+.sp-container-1 .google-signup {
+    text-decoration: none;
+    border: 1px solid rgb(211, 209, 209);
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.sp-container-1 .facebook-signup {
+    text-decoration: none;
+    margin-left: 2vh;
+    background-color: rgb(47, 37, 180);
+    color: white;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.sp-container-1 .terms,
+.sp-container-1 .policy {
+    text-decoration: none;
+    color: rgb(189, 91, 91);
+    font-weight: bold;
+}
+
+.sp-already-account .login {
+    text-decoration: none;
+    font-weight: bold;
+    color: indianred;
+}
+
+.signup-custom {
+    padding: 8px 0 8px 10px;
+}
+
+.signup-custom .or {
+    color: rgb(199, 188, 188);
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.signup-custom .left-border,
+.signup-custom .right-border {
+    display: inline-block;
+    border: 1px solid rgb(240, 234, 234);
+    width: 150px;
+    margin-bottom: 3px;
+}
+
+
+/* Responsive code */
+
+
+/* On screens that are 992px or less */
+
+@media screen and (max-width: 992px) {
+    .sp-container-2 {
+        display: none;
+    }
+    .sp-already-account {
+        font-size: 18px;
+    }
+    .signup-container {
+        margin-left: 12vh;
+        width: 80%;
+    }
+    .sp-container-1 {
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        background-image: none;
+        height: 95vh;
+        background-image: url(../../svg/bob/signup-small-screen.svg);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+    }
+    .sp-container-1 h2 {
+        margin-top: -2vh;
+    }
+    .sp-container-1 .google-signup,
+    .sp-container-1 .facebook-signup {
+        display: block;
+        margin-bottom: 10 px;
+        width: 75%;
+        font-size: 20px;
+    }
+    .sp-container-1 .google-signup,
+    .sp-container-1 .facebook-signup {
+        margin-left: 8vh;
+        text-align: center;
+    }
+    .sp-container-1 input[type="text"],
+    .sp-container-1 input[type="email"],
+    .sp-container-1 input[type="password"] {
+        margin-left: 4vh;
+        opacity: 0.8;
+    }
+    .signup-custom .or {
+        padding-left: 18px;
+        padding-right: 8px;
+        font-size: 24px;
+    }
+    .signup-custom .left-border,
+    .signup-custom .right-border {
+        width: 250px;
+        margin-left: 20px;
+    }
+    .sp-container-1 h2 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .sp-agreement {
+        color: white;
+    }
+}
+
+
+/* on screen soze 662 or less */
+
+@media screen and (max-width: 662px) {
+    .signup-container {
+        margin-top: 3vh;
+        margin-left: 0;
+        width: 100%;
+    }
+    .sp-container-1 {
+        padding: 40px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        background-image: none;
+    }
+    .sp-container-1 .google-signup,
+    .sp-container-1 .facebook-signup {
+        display: block;
+        margin-bottom: 10px;
+        width: 75%;
+        font-size: 20px;
+    }
+    .sp-container-1 .google-signup,
+    .sp-container-1 .facebook-signup {
+        margin-left: 8vh;
+        text-align: center;
+    }
+    .sp-container-1 input[type="text"],
+    .sp-container-1 input[type="email"],
+    .sp-container-1 input[type="password"] {
+        margin-left: 4vh;
+    }
+    .signup-custom .or {
+        padding-left: 18px;
+        padding-right: 8px;
+    }
+    .signup-custom .left-border,
+    .signup-custom .right-border {
+        width: 150px;
+        margin-left: 20px;
+    }
+    .sp-container-1 h2 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .sp-container-2 {
+        display: none;
+    }
+}
+
+
+/* on screen minmin 992px  */
+
+@media only screen and (min-width: 992px) {
+    .signup-container {
+        margin-top: 4vh;
+        margin-left: 20%;
+        width: 57.5%;
+    }
+    .sp-container-2 {
+        overflow: hidden;
+    }
+    .sp-container-1 {
+        background-color: white;
+        min-height: 91vh;
+        overflow: hidden;
+    }
+}
+
+
+/* signup container 2 design */
+
+.sp-container-2 {
+    border-left: 1px solid rgb(216, 216, 216);
+    border-radius: 0 15px 15px 0;
+    background-color: white;
+}
+
+.sp-container-2 img {
+    padding-right: 18px;
+    margin-top: 5.3vh;
+    padding-right: 10px;
+}
+
+.sp-container-2 p {
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bold;
+    color: indianred;
+}
+
+.sp-button {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: indianred;
+    color: white;
+    margin-top: 2vh;
+    padding: 5px;
+    font-size: 20px;
+}

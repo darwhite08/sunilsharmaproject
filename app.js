@@ -20,6 +20,9 @@ app.get('/preview', function(req, res) {
 app.get('/login', function(req, res) {
     res.render('components/signup/login');
 });
+app.get('/signup', function(req, res) {
+    res.render('components/signup/signup');
+});
 
 
 

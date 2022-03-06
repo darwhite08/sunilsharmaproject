@@ -1,3 +1,33 @@
 <%- include('../../main-components/header'); -%>
+    <div class="signup-page w3-container">
 
+        <div class="w3-card w3-row signup-container w3-mobile" style="border-radius: 20px; ">
+
+            <form action="" class="sp-container-1 w3-col l6 ">
+                <h2>Get Started</h2>
+                <span class="sp-already-account">Already have an account? <a href="/login" class="login">Login in</a></span>
+                <hr>
+                <a class="google-signup" href="http://"><img src="../../../public/images/google-logo.png" alt="" style="height: 20px; width: 20px;"> Signup with Google</a>
+                <a class="facebook-signup" href="http://"><i class="fa-brands fa-facebook"></i> Signup with Facebook</a>
+                <div class="signup-custom">
+                    <span class="left-border"></span ><span class="or">or</span><span class="right-border"></span><br>
+                </div>
+                <input type="text" for="fnmae" name="fname" placeholder="First Name"><br>
+                <input type="text" for="lnmae" name="lname" placeholder="Last Name"><br>
+                <input type="email" for="email" name="email" placeholder="Email Address"><br>
+                <input type="password" for="password" name="password" placeholder="Password"><br>
+                <input type="password" for="password" name="password" placeholder="Conform Password"><br>
+                <input type="radio" name="radio" id="radio">
+                <span class="sp-agreement">I agree to platform's  <a href="" class="terms">Terms of Service</a> and <a href="" class="policy">Privacy Policy</a><br></span>
+                <button class="sp-button" type="submit">Signup</button><br>
+
+            </form>
+
+            <div class="w3-col l6 sp-container-2 ">
+                <p>Start for free and <br>get attractive offers.</p>
+
+                <img src="../../../public/svg/signup.svg" alt="" style="height: 70vh;">
+            </div>
+        </div>
+    </div>
     <%- include('../../main-components/footer'); -%>
