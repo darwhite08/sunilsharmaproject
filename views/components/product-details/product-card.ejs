@@ -6,7 +6,7 @@
 <div class="w3-row">
     <% var current = 0; %>
         <% while (current < 20){ %>
-            <a href="/preview" class="product-container w3-margin-top w3-margin-left w3-col l3" style="width: 23.5%; text-decoration: none;">
+            <div class="product-container  w3-margin-top w3-margin-left w3-col l3" style="width: 23.5%; text-decoration: none;">
                 <img src="../../../public/images/demopic.jpg" alt="" class="product-image">
                 <div class="product-detail">
                     <span class="product-name">Vanesa perfume</span><br>
@@ -18,7 +18,22 @@
                     <span class="product-rating">4.5 &nbsp;	&#9733;</span>
                     <span class="product-rating-details">1 review</span><br>
                 </div>
-            </a>
+            </div>
             <%    current += 1;
         };%>
+                <div class="over-lay-options" id="over-lay-options">
+                    <div class="w3-center olo-container">
+                        <span class="olo-cutter" id="olo-cutter">x</span>
+                        <h3>Select Preview Type</h3>
+
+                        <form action="">
+                            <input type="checkbox" name="" id=""><span class="olo-1 w3-button w3-hover-none">Over Lay</span>
+                            <input type="checkbox" name="" id=""><span class="olo-2 w3-button w3-hover-none">Another Page</span><br>
+                            <input type="radio" name="" id="">
+                            <span class="olo-3">Remember My choice</span><br>
+                            <button class="olo-button" type="submit">Done</button>
+                        </form>
+                    </div>
+
+                </div>
 </div>

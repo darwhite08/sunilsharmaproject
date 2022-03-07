@@ -1,0 +1,109 @@
+/* Responsive code */
+
+.sp-container-1 label {
+    margin-left: 3vh;
+    font-weight: bold;
+    color: rgb(129, 129, 129);
+}
+
+.sp-container-1 .ln-header {
+    font-weight: bold;
+    color: white;
+    margin: -1vh;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    width: 100px;
+}
+
+.ln-container-1 h2 {
+    color: black;
+    font-weight: bold;
+}
+
+
+/* On screens that are 992px or less */
+
+@media screen and (max-width: 992px) {
+    .ln-container-2 {
+        display: none;
+    }
+    .login-container {
+        margin-left: 12vh;
+        width: 80%;
+    }
+    .sp-container-1 .ln-header {
+        margin-top: -2vh;
+        color: black;
+        font-weight: bold;
+    }
+    .ln-container-1 h2 {
+        color: black;
+    }
+    .sp-container-1 .google-login,
+    .sp-container-1 .facebook-login {
+        margin-bottom: 10px;
+        width: 75%;
+        font-size: 20px;
+    }
+    .sp-container-1 .google-login,
+    .sp-container-1 .facebook-login {
+        margin-left: 18vh;
+        text-align: center;
+    }
+    .sp-container-1 input[type="text"],
+    .sp-container-1 input[type="email"],
+    .sp-container-1 input[type="password"] {
+        margin-left: 4vh;
+        opacity: 0.8;
+    }
+    .sp-container-1 label {
+        margin-left: 5vh;
+        color: rgb(37, 35, 145);
+    }
+    .signup-custom .or {
+        padding-left: 18px;
+        padding-right: 8px;
+        font-size: 24px;
+    }
+    .signup-custom .left-border,
+    .signup-custom .right-border {
+        width: 250px;
+        margin-left: 20px;
+    }
+    .sp-container-1 h2 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .sp-agreement {
+        color: white;
+    }
+}
+
+
+/* on screen soze 662 or less */
+
+@media screen and (max-width: 662px) {
+    .ln-agreement {}
+    .sp-container-1 .ln-header {
+        color: black;
+        font-weight: bold;
+    }
+}
+
+
+/* on screen minmin 992px  */
+
+@media only screen and (min-width: 992px) {
+    .signup-container {
+        margin-top: 4vh;
+        margin-left: 20%;
+        width: 57.5%;
+    }
+    .sp-container-2 {
+        overflow: hidden;
+    }
+    .sp-container-1 {
+        background-color: white;
+        min-height: 91vh;
+        overflow: hidden;
+    }
+}

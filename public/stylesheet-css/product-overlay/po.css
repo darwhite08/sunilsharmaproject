@@ -1,0 +1,18 @@
+.po-main {
+    position: fixed;
+    top: 0;
+    left: 0%;
+    background-color: rgb(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    padding: 40px 80px;
+}
+
+.po-container {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-position: center;
+    border-radius: 20px;
+}

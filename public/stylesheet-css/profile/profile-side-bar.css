@@ -1,0 +1,75 @@
+.profile-container {
+    padding: 30px;
+    background-color: rgb(15, 13, 13);
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.profile-side-bar {
+    height: 90vh;
+    width: 23vh;
+    background-color: rgb(31, 29, 37);
+    color: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.profile-user {
+    margin: 2vh 0 0 2vh;
+}
+
+.profile-user img {
+    overflow: hidden;
+    border-radius: 35px;
+}
+
+.psb-user span {
+    padding-left: 6px;
+}
+
+.psb-user :first-child {
+    font-size: 14px;
+}
+
+.psb-user :last-child {
+    font-size: 10px;
+    color: grey;
+}
+
+.psb-setting-sign {
+    padding-top: 10px;
+}
+
+.profile-menu {
+    margin: 2vh 0 2vh 2vh;
+}
+
+.profile-menu span {
+    display: inline-block;
+    margin: 2vh 0 2vh 0;
+    color: grey;
+}
+
+.profile-menu ul {
+    list-style: none;
+}
+
+.profile-menu .psb-menu li a,
+.profile-menu .psb-other-menu li a {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 2.5vh;
+    border-bottom: 1px solid rgb(37, 28, 65);
+    width: 50%;
+    padding-bottom: 8px;
+}
+
+.profile-menu .psb-menu li :focus,
+.profile-menu .psb-other-menu li :focus {
+    border-left: 4px solid aqua;
+    margin-left: -2vh;
+    padding: 1vh 1vh 1vh 2vh;
+    background-color: rgb(56, 52, 66);
+    width: 100%;
+}

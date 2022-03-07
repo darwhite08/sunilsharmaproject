@@ -1,3 +1,33 @@
 <%- include('../../main-components/header'); -%>
+    <%- include('../../main-components/header'); -%>
+        <div class="signup-page login-page w3-container">
 
-    <%- include('../../main-components/footer'); -%>
+            <div class="w3-card w3-row signup-container login-container w3-mobile" style="border-radius: 20px; ">
+
+                <form action="" class="sp-container-1 ln-container-1  w3-col l6  w3-padding-64">
+                    <h1 class="ln-header ">Login</h1>
+                    <h2>Welcome back </h2>
+                    <hr>
+                    <a class="google-signup google-login " href="http://"><img src="../../../public/images/google-logo.png" alt="" style="height: 20px; width: 20px;"> Login with Google</a>
+                    <a class="facebook-signup facebook-login" href="http://"><i class="fa-brands fa-facebook"></i> Login with Facebook</a>
+                    <div class="signup-custom login-custom">
+                        <span class="left-border"></span ><span class="or">or</span><span class="right-border"></span><br>
+                    </div>
+                    <form action="">
+                        <label for="email">Login id </label><br>
+                        <input type="email" for="email" name="email" placeholder="Email Adress or Phone number"><br>
+                        <label for="password">Password</label><br>
+                        <input type="password" for="password" name="password" placeholder="Password"><br>
+                        <input type="radio" name="radio" id="radio">
+                        <span class="ln-agreement">I agree to platform's  <a href="" class="terms">Terms of Service</a> and <a href="" class="policy">Privacy Policy</a><br></span>
+                        <button class="sp-button" type="submit">Login</button><br>
+                    </form>
+                </form>
+
+                <div class="w3-col l6 sp-container-2 ln-container-2">
+                    <img src="../../../public/svg/login.svg" alt="" style="height: 85.7vh; width: 60vh;">
+                </div>
+            </div>
+        </div>
+        <%- include('../../main-components/footer'); -%>
+            <%- include('../../main-components/footer'); -%>

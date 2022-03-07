@@ -1,0 +1,125 @@
+    .over-lay-options {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .over-lay-options div {
+        height: 50vh;
+        background-color: white;
+        margin-top: 10%;
+        margin-left: 40%;
+        width: 50vh;
+        border-radius: 15px;
+        padding: 80px 20px 0 20px;
+        text-align: center;
+        background-image: url("../../svg/bob/olo.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .over-lay-options h3 {
+        font-weight: bold;
+    }
+    
+    .olo-cutter {
+        position: absolute;
+        top: 22%;
+        right: 38%;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+    .olo-1,
+    .olo-2 {
+        font-size: 20px;
+    }
+    
+    .olo-3 {
+        font-size: 20px;
+    }
+    
+    .olo-button {
+        padding: 4px 18px 4px 18px;
+        width: 50%;
+        font-size: 24px;
+        background-color: green;
+        border: none;
+        margin-top: 2vh;
+        color: white;
+        border-radius: 10px;
+    }
+    
+    @media screen and (min-width: 992px) {
+        .over-lay-options div {
+            height: 50vh;
+            margin-top: 10%;
+            margin-left: 40%;
+        }
+    }
+    /* On screens that are 992px or less */
+    
+    @media screen and (max-width: 992px) {
+        .over-lay-options div {
+            height: 50vh;
+            background-color: white;
+            margin-top: 20%;
+            margin-left: 25%;
+        }
+        .olo-cutter {
+            position: absolute;
+            top: 24%;
+            right: 28%;
+        }
+        .olo-1,
+        .olo-2 {
+            font-size: 20px;
+        }
+        .olo-3 {
+            font-size: 20px;
+        }
+        .olo-button {
+            padding: 4px 18px 4px 18px;
+            width: 50%;
+            font-size: 24px;
+            background-color: green;
+            border: none;
+            margin-top: 2vh;
+            color: white;
+            border-radius: 10px;
+        }
+    }
+    
+    @media screen and (max-width: 662px) {
+        .over-lay-options div {
+            height: 70vh;
+            padding-top: 20%;
+            margin-top: 20%;
+            margin-left: 18%;
+        }
+        .olo-cutter {
+            top: 16%;
+            right: 28%;
+            color: black;
+        }
+        .olo-1,
+        .olo-2 {
+            font-size: 20px;
+        }
+        .olo-3 {
+            font-size: 20px;
+            color: rgb(226, 107, 107);
+        }
+        .olo-button {
+            padding: 4px 18px 4px 18px;
+            width: 50%;
+            font-size: 24px;
+            background-color: rgb(110, 2, 233);
+            color: white;
+        }
+    }

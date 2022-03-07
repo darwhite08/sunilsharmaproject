@@ -1,5 +1,7 @@
+// var olo_element = document.getElementById("over-lay-options")
+
 // for (let index = 0; index < document.querySelectorAll(".product-container").length; index++) {
 //     document.querySelectorAll(".product-container")[index].addEventListener("click", function() {
-//         document.querySelectorAll(".product-container")[index].setAttribute("href", "/")
+//         olo_element.style.display = "block";
 //     });
 // }

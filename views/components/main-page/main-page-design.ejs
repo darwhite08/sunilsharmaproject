@@ -27,28 +27,29 @@
                         <span>some text</span> |
                         <span>Some text</span> |
                     </div>
-                    <button class="w3-button w3-white">Sign up now</button>
+                    <a href="/signup" class="w3-margin-top w3-button w3-white">Sign up now</a>
                 </div>
                 <div class="mpd-third">
                     <h2 class="header">Products for you</h2>
 
-                    <div class="w3-row">
-                        <% var current = 0; %>
-                            <% while (current < 20){ %>
-                                <a href="/preview" class="product-container w3-margin-top w3-margin-left w3-col l3" style="width: 23.5%; text-decoration: none;">
-                                    <img src="../../../public/images/demopic.jpg" alt="" class="product-image">
-                                    <div class="product-detail">
-                                        <span class="product-name">Vanesa perfume</span><br>
-                                        <span class="product-price">$10</span>
-                                        <span><del class="product-price-del">$15</del></span>
-                                        <span class="product-price-off">33.33% off</span><br>
-                                        <span class="product-extra">&#37; $2 dollars discount on 1st order</span><br>
-                                        <span class="product-delivery-details">Free Delivery</span><br>
-                                        <span class="product-rating">4.5 &nbsp;	&#9733;</span>
-                                        <span class="product-rating-details">1 review</span><br>
+                    <div class="w3-row pc-main">
+                        <%- include('../product-preview/product-overlay') -%>
+                            <% var current = 0; %>
+                                <% while (current < 20){ %>
+                                    <div href="/preview" id="product-container" class="product-container w3-margin-top w3-margin-left w3-col l3" style="width: 23.5%; text-decoration: none;">
+                                        <img src="../../../public/images/demopic.jpg" alt="" class="product-image">
+                                        <div class="product-detail">
+                                            <span class="product-name">Vanesa perfume</span><br>
+                                            <span class="product-price">$10</span>
+                                            <span><del class="product-price-del">$15</del></span>
+                                            <span class="product-price-off">33.33% off</span><br>
+                                            <span class="product-extra">&#37; $2 dollars discount on 1st order</span><br>
+                                            <span class="product-delivery-details">Free Delivery</span><br>
+                                            <span class="product-rating">4.5 &nbsp;	&#9733;</span>
+                                            <span class="product-rating-details">1 review</span><br>
+                                        </div>
                                     </div>
-                                </a>
-                                <%    current += 1;
+                                    <%    current += 1;
                             };%>
                     </div>
                 </div>
