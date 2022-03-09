@@ -2,7 +2,10 @@
 
 .top-nav {
     border-bottom: 1px solid rgb(194, 190, 190);
-    /* background-color: var(--base-white); */
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
 }
 
 .tb-element {
@@ -83,13 +86,80 @@
 
 .tb-div-search {
     width: 70vh;
-    margin-top: -0.3vh;
-    position: absolute;
-    top: -2.5%;
-    right: 15%;
+    margin-top: -1.2vh;
     margin-right: 40px;
+    background-color: transparent;
 }
 
 .tb-div-search div {
     border-radius: 10px;
+}
+
+
+/* Smart phone responsiveness code with max iwdth 662px */
+
+@media only screen and (max-width: 662px) {
+    .top-nav {
+        background-color: white;
+        border-bottom: 1px solid rgb(221, 221, 221);
+        position: sticky;
+        top: 0;
+        left: 0;
+        height: 10vh;
+    }
+    .tb-element {
+        font-size: 18px;
+        padding: 20px 0 20px 15px;
+    }
+    .tb-element:first-of-type {
+        display: none;
+    }
+    .tb-div-element {
+        font-size: 20px;
+        padding: 20px 0 0px 15px;
+    }
+    .tb-element a {
+        margin-left: 50px;
+    }
+    /* Svg  */
+    #flipwave-svg {
+        height: 30px;
+        left: 4%;
+        top: 30%;
+        clip: rect(0px, 200px, 55px, 5px);
+    }
+    .rt-nav {
+        margin-top: -10px;
+        padding-left: 20px;
+    }
+    .ns-ttp .fa-bell,
+    .fa-cart-shopping {
+        border-right: none;
+        font-size: 18px;
+        padding: 0 0 0 8px;
+        border-left: 3px solid rgb(226, 215, 215);
+        margin-right: 4px;
+    }
+    .user-img {
+        display: none;
+        height: 45px;
+        width: 45px;
+        border-radius: 25px;
+        background: url("../../images/download.jfif") no-repeat;
+        margin-right: 20px;
+    }
+    .user-img::after {
+        content: " ";
+        color: red;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+    }
+    /* Search bar and Button */
+    .tb-div-search {
+        width: 55vw;
+        margin-top: -0.3vh;
+        position: relative;
+        margin-right: 10px;
+    }
 }
