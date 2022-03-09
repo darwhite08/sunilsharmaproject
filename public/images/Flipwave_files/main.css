@@ -1,0 +1,30 @@
+@import url(colors.css);
+@import url(./stylesheet-css/nb-styles/bt.css);
+@import url(./stylesheet-css/nb-styles/foot-bar.css);
+@import url(./stylesheet-css/nb-styles/ns-tp.css);
+@import url(./stylesheet-css/nb-styles/side-bar.css);
+@import url(./stylesheet-css/nb-styles/tb.css);
+@import url(./stylesheet-css/product-details-styles/product-details-container.css);
+@import url(./stylesheet-css/product-details-styles/product.css);
+@import url(./stylesheet-css/product-order/cart.css);
+@import url(./stylesheet-css/product-preview/pv.css);
+@import url(./stylesheet-css/mpd/mp-design.css);
+@import url(./stylesheet-css/signup/login.css);
+@import url(./stylesheet-css/signup/signup.css);
+@import url(./stylesheet-css/profile/profile-side-bar.css);
+@import url(./stylesheet-css/profile/profile.setting.css);
+@import url(./stylesheet-css/profile/site-setting.css);
+@import url(./stylesheet-css/product-overlay/po-choice.css);
+@import url(./stylesheet-css/product-overlay/po.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    cursor: pointer;
+}

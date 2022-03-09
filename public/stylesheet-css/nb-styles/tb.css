@@ -6,6 +6,7 @@
     top: 0;
     left: 0;
     background-color: white;
+    z-index: 100;
 }
 
 .tb-element {
@@ -66,6 +67,7 @@
 /* user Images */
 
 .user-img {
+    cursor: pointer;
     height: 45px;
     width: 45px;
     border-radius: 25px;

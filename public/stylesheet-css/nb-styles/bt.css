@@ -9,8 +9,6 @@
 .bt-element a {
     padding: 18px 4px 80px 4px;
     text-decoration: none;
-    cursor: ew-resize;
-    color: var(--base-black);
     color: var(--base-white);
     cursor: pointer;
     font-size: 15px;

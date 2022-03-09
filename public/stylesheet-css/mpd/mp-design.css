@@ -33,7 +33,6 @@
 
 .main-page-design img {
     height: 60vh;
-    width: 40vh;
     overflow: hidden;
     border-radius: 20px;
 }
@@ -79,9 +78,9 @@
 }
 
 
-/* for tablets with max width 922 px */
+/* For smart phone with max-width 662px */
 
-@media only screen and (max-width: 922px) {
+@media only screen and (max-width: 662px) {
     .main-page-design {
         margin-left: 3vh;
         margin-right: 2vh;
@@ -108,7 +107,7 @@
     }
     .main-page-design img {
         height: 30vh;
-        width: 100%;
+        width: 100vw;
         overflow: hidden;
         border-radius: 20px;
     }
@@ -148,9 +147,9 @@
 }
 
 
-/* For smart phone with max-width 662px */
+/* for tablets with max width 922 px */
 
-@media only screen and (max-width: 662px) {
+@media only screen and (max-width: 922px) {
     .main-page-design {
         margin-left: 3vh;
         margin-right: 2vh;
