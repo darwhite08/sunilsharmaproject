@@ -75,7 +75,8 @@ span>.product-price-del {
 
 @media only screen and (max-width: 662px) {
     .product-class-detail {
-        margin-left: 1vh;
+        margin-left: 2vw;
+        margin-right: 2vw;
     }
     .product-class {
         font-weight: bold;
