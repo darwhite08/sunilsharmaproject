@@ -2,14 +2,66 @@
 po:Product Overlay
 po-si:Product Overlay slide images
 po-pd:Product Overlay product Details
+po-pn:Product Overlau Product Name
  -->
-<div class="po-main">
-    <div class="po-container w3-row">
-        <div class="po-si">
-
+<div class="po-main" id="po-main-id">
+    <span class="po-main-cutter" id="po-main-cutter"><i class="fa-solid fa-x"></i></span>
+    <div class="po-container w3-row ">
+        <!-- Image-Slides container  -->
+        <div class="po-si w3-col l5 s12 m12 w3-mobile">
+            <% for( let index = 0; index < 1; index++ ) { %>
+                <div class="my-slides fade">
+                    <div class="number-text">3 / 3</div>
+                    <img src="../../../public/images/demopic.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+                <% } %>
         </div>
-        <div class="po-pd">
 
+        <!-- Product Overlay Details  -->
+
+        <div class="po-pd w3-col l7 s12 m12">
+            <div class="po-pn">
+                <span class="pd-main-cutter" id="pd-main-cutter"><i class="fa-solid fa-x"></i></span>
+                <div class="po-product-name">
+                    <span class="po-header">VANESA PERFUME</span><br>
+                    <span class="w3-text-grey w3-large">Lorem ipsum dolor sit, amet ipsum dolor sit </span><br>
+                    <a class="w3-btn w3-hover-none w3-border w3-margin-top" href="http://" target="_blank" rel="noopener noreferrer"><Span>4.5</Span> <span>140 ratings</span></a>
+                    <hr>
+                    <span class="po-price">$10 <del class="po-previous-price" >$. 15</del></span>
+                    <Span class="po-discount">33.33% off</Span><br>
+                    <span class="w3-block w3-margin-bottom w3-text-green">inclusive of all taxes</span>
+                </div>
+                <div class="po-other-options w3-margin-bottom ">
+                    <span class="w3-large po-header ">Select Size</span><br><br>
+                    <span class="w3-round  w3-border w3-padding w3-margin-right ">30ml</span>
+                    <span class="w3-round  w3-border w3-padding ">30ml</span>
+                </div>
+
+                <div class="po-buy-options ">
+                    <a class="w3-btn w3-hover-none w3-light-blue w3-hover-blue w3-large w3-round-large " href="" style="width: 25%;">Buy Now</a>
+                    <a class="w3-btn w3-hover-none w3-light-blue w3-hover-blue w3-large w3-round-large" href="" style="width: 25%;">Add to cart</a>
+                </div>
+                <hr>
+                <div class="">
+                    <span class="w3-large w3-margin-right"> $10 <del class="w3-text-grey" pv-previous-price> &nbsp;$. 15 &nbsp;</del></span>
+                    <Span class="w3-large w3-text-orange">33.33% off</Span><br>
+                    <span>Seller:</span>
+                    <span>Priyanshu chandra</span>
+                </div>
+                <hr>
+                <div class="po-delivery-options">
+                    <h4 class="po-header">DELIVERY OPTIONS</h4>
+                    <form action="">
+                        <input type="number" value="" placeholder="Enter PIN code">
+                    </form>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, modi voluptatem! Sequi quia architecto accusantium soluta ratione iste, at quidem et, dolore dolor iure doloribus earum eum tenetur, sapiente ex.</p>
+                </div>
+                <div>
+                    <a class="w3-button w3-hover-none w3-text-green" href="">Know More</a>
+                </div>
+                <hr>
+            </div>
         </div>
     </div>
 </div>
