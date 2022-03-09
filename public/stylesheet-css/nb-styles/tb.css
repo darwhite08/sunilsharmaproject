@@ -36,7 +36,7 @@
     position: absolute;
     left: 15%;
     top: 1%;
-    clip: rect(0px, 200px, 55px, 10px);
+    clip: rect(0px, 200px, 55px, 0px);
 }
 
 
@@ -96,12 +96,18 @@
 }
 
 
+/* smart phone slider */
+
+.tb-bars {
+    display: none;
+}
+
+
 /* Smart phone responsiveness code with max iwdth 662px */
 
 @media only screen and (max-width: 662px) {
     .top-nav {
         background-color: white;
-        border-bottom: 1px solid rgb(221, 221, 221);
         position: sticky;
         top: 0;
         left: 0;
@@ -116,7 +122,7 @@
     }
     .tb-div-element {
         font-size: 24px;
-        padding: 20px 0 0px 15px;
+        padding: 10px 0 0 15px;
     }
     .tb-element a {
         margin-left: 50px;
@@ -126,10 +132,9 @@
         height: 30px;
         left: 4%;
         top: 30%;
-        clip: rect(0px, 200px, 55px, 5px);
     }
     .rt-nav {
-        margin-top: -10px;
+        margin-top: 10px;
         padding-left: 20px;
     }
     .ns-ttp .fa-bell,
@@ -157,9 +162,10 @@
     }
     /* Search bar and Button */
     .tb-div-search {
-        width: 55vw;
-        margin-top: -0.3vh;
-        position: relative;
-        margin-right: 2px;
+        display: none;
+    }
+    .tb-bars {
+        display: block;
+        margin: 0 2vw 0 0;
     }
 }
