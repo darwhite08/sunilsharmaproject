@@ -105,17 +105,17 @@
         position: sticky;
         top: 0;
         left: 0;
-        height: 10vh;
+        height: 8vh;
     }
     .tb-element {
-        font-size: 18px;
+        font-size: 24px;
         padding: 20px 0 20px 15px;
     }
     .tb-element:first-of-type {
         display: none;
     }
     .tb-div-element {
-        font-size: 20px;
+        font-size: 24px;
         padding: 20px 0 0px 15px;
     }
     .tb-element a {
@@ -135,7 +135,7 @@
     .ns-ttp .fa-bell,
     .fa-cart-shopping {
         border-right: none;
-        font-size: 18px;
+        font-size: 24px;
         padding: 0 0 0 8px;
         border-left: 3px solid rgb(226, 215, 215);
         margin-right: 4px;
@@ -160,6 +160,6 @@
         width: 55vw;
         margin-top: -0.3vh;
         position: relative;
-        margin-right: 10px;
+        margin-right: 2px;
     }
 }
