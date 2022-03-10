@@ -22,3 +22,15 @@
     color: white;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+    .bt-bar {
+        height: 4vh;
+    }
+}
+
+@media only screen and (max-width: 922px) {
+    .bt-bar {
+        height: 4vh;
+    }
+}
