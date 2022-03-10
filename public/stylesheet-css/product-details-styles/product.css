@@ -87,7 +87,7 @@ span>.product-price-del {
         margin: 2vw;
     }
     .product-detail {
-        padding: 2vh 0 0 2vw;
+        padding: 2vh 0 2vh 2vw;
     }
     .product-name {
         font-size: 12px;
@@ -106,6 +106,9 @@ span>.product-price-del {
     .product-extra {
         font-size: 12px;
         line-height: 18px;
+    }
+    .product-delivery-details {
+        font-size: 15qpx;
     }
     .product-image {
         width: 90vw;
