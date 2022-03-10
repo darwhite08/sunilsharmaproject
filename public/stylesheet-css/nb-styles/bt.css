@@ -2,8 +2,10 @@
     display: inline-block;
     background-color: var(--charcol);
     width: 100%;
+    height: 5vh;
     padding: 1vh;
     position: relative;
+    overflow: hidden;
 }
 
 .bt-element a {

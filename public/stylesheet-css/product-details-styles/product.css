@@ -120,3 +120,27 @@ span>.product-price-del {
         font-weight: bold;
     }
 }
+
+@media only screen and (max-width: 922px) {
+    .pc-main {
+        margin: 2vw 6vw 2vw 6vw;
+    }
+    .product-detail {
+        padding: 1vw 1vw 1.5vw 2vw;
+    }
+    .product-price {
+        font-size: 20px;
+    }
+    .product-price-off {
+        color: green;
+    }
+    span>.product-price-del {
+        font-size: 20px;
+    }
+    .product-extra {
+        font-size: 15px;
+    }
+    .product-delivery-details {
+        font-size: 15px;
+    }
+}
