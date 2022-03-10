@@ -74,14 +74,14 @@ span>.product-price-del {
 /*  */
 
 @media only screen and (max-width: 662px) {
+    .pc-main {
+        margin: 0 0 0 2vh;
+    }
     .product-class-detail {
         margin-right: 2vw;
     }
     .product-container {
         line-height: 24px;
-    }
-    .product-container:nth-child(2n) {
-        margin: -4vw;
     }
     .product-container {
         margin: 2vw;
