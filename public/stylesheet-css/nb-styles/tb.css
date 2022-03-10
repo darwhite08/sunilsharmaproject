@@ -149,13 +149,11 @@
     .tb-search-bar .fa-magnifying-glass {
         border-right: none;
         font-size: 24px;
-        padding: 0 0 0 8px;
-        border-left: 3px solid rgb(226, 215, 215);
-        margin-right: 4px;
+        padding: 0 0 0 4px;
+        margin-right: 2px;
     }
     .tb-search-bar .fa-magnifying-glass {
         display: inline;
-        margin-left: -3vw;
     }
     .user-img {
         display: none;
