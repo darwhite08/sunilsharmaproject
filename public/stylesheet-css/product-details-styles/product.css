@@ -108,11 +108,12 @@ span>.product-price-del {
         line-height: 18px;
     }
     .product-delivery-details {
-        font-size: 15qpx;
+        font-size: 15px;
     }
     .product-image {
         width: 90vw;
         height: 80vh;
+        border-radius: 2px;
     }
     .product-rating {
         padding: 4px;
