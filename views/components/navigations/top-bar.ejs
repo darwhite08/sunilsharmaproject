@@ -2,7 +2,6 @@
     <div class="clearfix"></div>
     <span href="top" class="tb-element"><a href="#">Home</a></span>
     <img id="flipwave-svg" src="../../../public/svg/Vanilla-1s-280px.svg" alt="flipwave-company-text">
-
     <div class="rt-nav">
 
         <!-- Search bar large devices -->
@@ -40,10 +39,44 @@
             <img id="user-img" class="user-img" src="../../../public/images/demopic.jpg" alt="">
         </div>
 
-        <div class="tb-div-element tb-bars" id="tb-menu-slider">
-            <i class="fa-solid fa-bars"></i>
-            <div class="tb-menu" id="tb-menu">
+        <!-- Smart phone more menu
+        tbm-up: Top Bar Menu User Profile;
+        tbm-uns: Top Bar Menu User Not Signed;
+        tbm-os:  Top Bar Menu Other Options -->
 
+        <div class="tb-div-element tb-bars">
+            <i id="tb-menu-slider" class="fa-solid fa-bars"></i>
+            <div class="tb-menu" id="tb-menu">
+                <span class="tbm-cutter" id="tbm-cutter"><i class="fa-solid fa-x"></i></span>
+                <!-- If user is logged in -->
+                <div class="tbm-up">
+                    <img class="w3-circle " src="../../../public/images/demopic.jpg" alt="">
+                    <div class="tbm-upt">
+                        <span class="name  w3-text-white w3-block">Sunil sharma</span>
+                        <span class="social">sunilsharma@gmail.com</span>
+                    </div>
+                </div>
+                <!-- If user is not login -->
+                <div class="tbm-uns">
+                    <button class="w3-button w3-hover-none w3-green w3-text-white" type="">Login</button>
+                </div>
+
+                <div class="tbm-list">
+                    <ul class="tbm-l1">
+                        <li class="tbm-l-elements"><a href="">Dashboard</a></li>
+                        <li class="tbm-l-elements"><a href="">Profile</a></li>
+                        <li class="tbm-l-elements"><a href="">My Orders</a></li>
+                        <li class="tbm-l-elements"><a href="/cart">My Cart</a></li>
+                        <li class="tbm-l-elements"><a href="">My Notifications</a></li>
+                        <li class="tbm-l-elements"><a href="">Dashboard</a></li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="tbm-os w3-container">
+                    <button class="w3-button w3-center w3-hover-none w3-large">Logout</button>
+                    <button class="w3-button w3-center w3-hover-none w3-large">Setting</button>
+                </div>
+                <hr>
             </div>
         </div>
     </div>

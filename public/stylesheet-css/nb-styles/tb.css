@@ -109,6 +109,87 @@
     display: none;
 }
 
+.tb-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+.tbm-up img {
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+    float: left;
+    border-radius: 20px;
+}
+
+.tbm-up {
+    background-color: black;
+    height: 10vh;
+}
+
+.tbm-upt {
+    display: inline-block;
+    margin-top: 30px;
+    line-height: 10px;
+}
+
+.tbm-up .name {
+    font-size: 15px;
+    color: white;
+}
+
+.tbm-up .social {
+    color: rgb(214, 200, 200);
+    font-size: 12px;
+}
+
+.tbm-cutter {
+    position: absolute;
+    top: 2%;
+    right: 4%;
+    color: white;
+}
+
+
+/* if not logined */
+
+.tbm-uns {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.tbm-uns button {
+    padding: 4px 24px 4px 24px;
+}
+
+
+/* phone slider list */
+
+.tbm-list {
+    padding-left: 20px;
+}
+
+.tbm-list ul {
+    list-style-type: none;
+}
+
+.tbm-l-elements a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.tbm-l-elements {
+    border-bottom: 1px solid rgb(224, 219, 219);
+    padding: 4px 0 4px 0;
+    width: 50%;
+}
+
 
 /* Smart phone responsiveness code with max iwdth 662px */
 
