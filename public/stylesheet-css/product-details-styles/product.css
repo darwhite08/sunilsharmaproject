@@ -78,13 +78,34 @@ span>.product-price-del {
         margin-right: 2vw;
     }
     .product-container {
+        line-height: 24px;
+    }
+    .product-container:nth-child(2n) {
+        margin: -4vw;
+    }
+    .product-container {
         margin: 2vw;
+    }
+    .product-detail {
+        padding: 2vh 0 0 0;
+    }
+    .product-name {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .product-price {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    span>.product-price-del {
+        font-size: 8px;
     }
     .product-image {
         width: 90vw;
         height: 80vh;
     }
-    .product-detail {
-        padding: 2vh 2vh 1.5vh 2vh;
+    .product-rating {
+        padding: 4px;
+        font-weight: bold;
     }
 }
