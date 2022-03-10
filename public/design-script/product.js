@@ -1,7 +1,6 @@
 for (let i = 0; i < document.querySelectorAll('.product-container').length; i++) {
     if (window.innerWidth <= 662) {
-        document.querySelectorAll('.product-container')[i].setAttribute("style", "width:40%;");
-        document.querySelectorAll('.product-container')[i].setAttribute("style", "margin:0;");
+        document.querySelectorAll('.product-container')[i].setAttribute("style", "width:40%;margin:0;");
     } else if (window.innerWidth <= 922 && window.innerWidth > 662) {
         document.querySelectorAll('.product-container')[i].setAttribute("style", "width:53%;");
     } else {
