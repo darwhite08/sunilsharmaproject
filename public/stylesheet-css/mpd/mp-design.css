@@ -144,6 +144,10 @@
         border-bottom: 2px solid grey;
         width: 50%;
     }
+    /* product container */
+    .pc-main {
+        margin: 0 4vh 0 -2vh;
+    }
 }
 
 
