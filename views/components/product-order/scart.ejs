@@ -1,0 +1,53 @@
+<!-- spmc: Smart Phone Shopping Cart;
+spsc-ob: order button -->
+<div class="spsc">
+    <div class="spsc-header w3-padding-16 w3-padding-large ">
+        <span class="w3-large" style="font-weight: bold;">3 itesm in cart</span><br>
+        <span>Some text here</span>
+    </div>
+    <div class="spsc-container ">
+        <% for( let index = 0; index < 6; index++ ) { %>
+            <div class="spsc-product w3-border-bottom w3-padding  w3-row  ">
+                <img class=" w3-col s4" src="../../../public/images/demopic.jpg" alt="" style="height: 8vh; width: 8vh;">
+                <div class="w3-col s7 w3-margin-left">
+                    <span>product name</span><br>
+                    <span>Product specification</span>
+                </div>
+                <div class="w3-col s1">
+                    <span>price</span>
+                </div><br><br>
+                <div class="spsc-buttons w3-block w3-display-container w3-margin-top w3-margin-right">
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                    </div>
+                    <div class="w3-display-bottomright w3-margin-right ">
+                        <button class="w3-text-white w3-button w3-hover-none w3-hover-black w3-border w3-circle w3-padding-small w3-black"><i class="fa-solid fa-plus"></i></button>
+                        <button class="w3-text-white w3-button  w3-hover-none w3-hover-red w3-border w3-red w3-circle w3-padding-small"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+    </div>
+    <div class="spsc-os w3-margin w3-padding">
+        <div class="w3-row w3-text-grey w3-margin-bottom">
+            <span class="w3-col s9">Sub Total</span>
+            <span class="w3-col s3">$100</span>
+        </div>
+        <div class="w3-row w3-text-grey w3-margin-bottom">
+            <span class="w3-col s9">tax</span>
+            <span class="w3-col s3">$1</span>
+        </div>
+        <div class="w3-row w3-text-grey w3-margin-bottom">
+            <span class="w3-col s9">Delivery Charge</span>
+            <span class="w3-col s3">Free</span>
+        </div>
+        <div class="w3-row w3-margin-bottom" style="font-weight: bold;">
+            <span class="w3-col s9">Amount Payable</span>
+            <span class="w3-col s3">$101</span>
+        </div><br>
+    </div>
+    <div class="spsc-ob ">
+        <button class="w3-button w3-hover-none w3-text-white w3-hover-text-white">More Shopping</button>
+        <button class="w3-button w3-hover-none w3-text-white w3-hover-text-white">Continue</button>
+    </div>
+</div>

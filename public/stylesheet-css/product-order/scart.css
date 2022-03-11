@@ -1,0 +1,18 @@
+.spsc-ob {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    display: block;
+    width: 100%;
+    padding: 6px;
+    height: 8vh;
+}
+
+.spsc-ob :first-child {
+    float: left;
+}
+
+.spsc-ob :last-child {
+    float: right;
+}

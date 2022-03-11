@@ -1,50 +1,74 @@
-<div class="cart-container">
+<!-- sp-cart: Shoping Cart;
+     spc-os:Shoping Cart Order Summary;
+-->
 
-    <div class="cart-header">
-        <Span>My Cart ()</Span>
-    </div>
-    <div class="products-container">
-        <% for( let index = 0; index < 5; index++ ) { %>
-            <div class="cart-products ">
-                <Button class="product-cut-button w3-btn w3-hover-none">X</Button>
-                <img class="" src=" ../../../public/images/demopic.jpg " alt=" " srcset=" ">
-                <div class="cart-product-details  ">
-                    <span>Vanesa Perfume</span><br>
-                    <span>100ml, Red</span><br>
-                    <span>Seller: Priyanshu chandra</span><br>
+
+<div class="sp-cart w3-row">
+    <div class="spc-products w3-col l8 s12 w3-padding-large w3-mobile">
+
+        <!-- Product heading -->
+
+        <div class="spcp-header w3-row w3-margin-bottom w3-padding-16">
+            <span class="w3-col l10 s10 w3-xlarge">Shoping Cart</span>
+            <span class="w3-col l2 s2 w3-xlarge">2 Items</span>
+        </div>
+
+        <!-- Product name value -->
+
+        <div class="spcp-header-2 w3-row w3-margin-bottom ">
+            <div class="w3-col l6 s3 w3-text-grey">Product Details</div>
+            <div class="w3-col l2 s3 w3-text-grey">Quantity</div>
+            <div class="w3-col l2 s3 w3-text-grey">Price</div>
+            <div class="w3-col l2 s3 w3-text-grey">Total</div>
+        </div>
+        <% for( let i = 0; i < 5; i++ ) { %>
+            <div class="spcp-container w3-border-bottom w3-padding-16">
+                <div class="w3-row">
+                    <div class="w3-col l6 s4 w3-row">
+                        <img class="w3-col l4 s6" src="../../../public/images/demopic.jpg" alt="  " style="height: 15vh; width: 10vw; overflow: hidden;">
+                        <div class="spcp-pn w3-col l8 s6 w3-padding">
+                            <span>Product Name</span><br>
+                            <span>Product Detail</span><br>
+                            <span>Product Detail</span><br>
+                            <span>Product Detail</span><br>
+                        </div>
+                    </div>
+                    <div class="w3-col l2 s4">
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                        </div>
+                    </div>
+                    <div class="w3-col l2 s2">
+                        <span>$100</span>
+                    </div>
+                    <div class="w3-col l2 s2">
+                        <span>$100</span>
+                    </div>
                 </div>
-                <form class="quantity buttons_added">
-                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
-                </form>
-                <button form="" class="w3-btn w3-hover-none">Remove</button><br>
             </div>
             <% } %>
-                <div class="place-order-button">
-                    <a href="#">Place Order</a>
+
+                <div class="spc-continue">
+                    <a class="w3-text-purple w3-button w3-hover-none w3-hover-text-purple " href="">&larr; Continue shopping</a>
                 </div>
     </div>
-
-    <div class="cart-price-summary " style="width: 39%;">
-        <h3>
-            Price Summary
-        </h3>
+    <div class="spc-os w3-col l4 s12 w3-border-left w3-block w3-light-grey w3-padding-large w3-mobile " style="height: 90vh;">
+        <span class="w3-xlarge w3-border-bottom w3-block w3-padding-16 w3-margin-bottom">Order Summary</span>
+        <div class="w3-row w3-margin-bottom">
+            <span class="w3-col l8">Sum Total</span>
+            <span class="w3-col l4">$100</span>
+        </div>
+        <div class="w3-row">
+            <span class="w3-col l8">Shiping </span>
+            <span class="w3-col l4">$5</span>
+        </div>
         <hr>
-        <div class="cart-price-details">
-            <% for( let index = 0; index < 5; index++ ) { %>
-                <span class="key">Some text</span> <span class="value">$10</span><br>
-                <% } %>
+        <div class="w3-row">
+            <span class="w3-col l8">Total Amount</span>
+            <span class="w3-col l4">$105</span>
         </div>
-        <div class="card-sumtotal">
-            <hr>
-            <span>Total Amount</span>
-            <span></span>
-            <hr>
-        </div>
-        <div class="card-price-extra">
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur reiciendis porro nobis voluptate minus perferendis at, adipisci in fuga quos quae commodi? Praesentium dolor expedita magnam vel at cupiditate!</span>
-            <hr>
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis molestias provident est ratione earum quas repudiandae placeat eos asperiores quis quia error minima ipsum, saepe tenetur laudantium! Ad, sunt ea.</span>
+        <div class="w3-container w3-margin-top ">
+            <button class="w3-button w3-blue w3-round-large w3-hover-blue w3-block " style="width: 75%;">Checkout</button>
         </div>
     </div>
-
 </div>

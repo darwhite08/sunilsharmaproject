@@ -5,3 +5,8 @@
 //         olo_element.style.display = "block";
 //     });
 // }
+document.getElementById("checkout-button").addEventListener("click", cart_handler);
+
+function cart_handler() {
+    location.href = "/cart/checkout";
+}
